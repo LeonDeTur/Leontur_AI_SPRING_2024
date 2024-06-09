@@ -11,11 +11,11 @@ theme: /
         a: Привет привет
         
     state: Weather
-        intent!: /Погода
+        q!: /Погода
         a: Погода непредсказуема
 
     state: Currency
-        intent!: /Валюта
+        q!: /Валюта
         a: Вам лучше не знать...
 
     state: Bye
