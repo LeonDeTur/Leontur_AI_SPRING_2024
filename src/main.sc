@@ -9,6 +9,12 @@ theme: /
     state: Hello
         intent!: /привет
         a: Привет привет
+        
+    state: Weather
+        intent!: /Погода
+
+    state: Currency
+        intent!: /Валюта
 
     state: Bye
         intent!: /пока
