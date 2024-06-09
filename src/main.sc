@@ -3,29 +3,10 @@ require: slotfilling/slotFilling.sc
 theme: /
 
     state: Start
-        q!: $regex</start>
+        q!: *start
+        q!: * (привет/здравствуй*/~добрый (~утро/~вечер/~дент/~ночь))
         a: Начнём.
-
-    state: Hello
-        intent!: /привет
-        a: Привет привет
         
-    state: Weather
-        intent!: /погода
-        a: Погода непредсказуема
-
-    state: Currency
-        intent!: /валюта
-        a: Вам лучше не знать...
-
-    state: Bye
-        intent!: /пока
-        a: Пока пока
-
     state: NoMatch
         event!: noMatch
         a: Я не понял. Вы сказали: {{$request.query}}
-
-    state: Match
-        event!: match
-        a: {{$context.intent.answer}}
