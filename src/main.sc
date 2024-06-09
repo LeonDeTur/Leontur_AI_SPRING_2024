@@ -12,9 +12,11 @@ theme: /
         
     state: Weather
         intent!: /Погода
+        a: Погода непредсказуема
 
     state: Currency
         intent!: /Валюта
+        a: Вам лучше не знать...
 
     state: Bye
         intent!: /пока
